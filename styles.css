@@ -1,0 +1,11 @@
+h1
+{
+    color: rgb(214, 51, 73); 
+    font-size: medium;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    p {
+        line-height: 1.6;
+}
