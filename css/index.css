@@ -1,67 +1,79 @@
+/* Estilo general del body */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    font-family: 'Arial', 'Helvetica', sans-serif; /* Tipografía sans-serif */
+    background-color: #001f3f; /* Azul marino */
+    color: #f5f5f5; /* Color de texto claro */
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
 }
 
+/* Contenedor principal */
 .container {
+    max-width: 800px;
+    padding: 40px;
+    background: #003366; /* Azul marino claro */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
-h1 {
-    font-size: 3rem;
-    letter-spacing: 2px;
-    color: #ff5757;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+/* Estilo para títulos */
+h1, h2, h3 {
+    color: #d4af37; /* Color dorado para los títulos */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center;
 }
 
+/* Estilo para párrafos */
+p {
+    color: #f5f5f5; /* Color de texto para párrafos */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+    text-align: center;
+}
+
+/* Estilo general de los enlaces */
 a {
     text-decoration: none;
-    font-size: 1.5rem;
+    color: #d4af37; /* Dorado */
+    font-size: 18px;
     font-weight: bold;
-    padding: 10px 20px;
-    color: #fff;
-    background: linear-gradient(135deg, #6D83F2, #AA6BF9);
-    border-radius: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
     display: inline-block;
-    margin: 20px;
-    position: relative;
-    overflow: hidden;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border: 2px solid #d4af37; /* Bordes dorados */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Efecto hover para enlaces */
 a:hover {
-    background: linear-gradient(135deg, #FF6B6B, #FFD93D);
-    color: #fff;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    background-color: #d4af37; /* Fondo dorado */
+    color: #ffffff; /* Texto blanco */
 }
 
-a:before {
-    content: '';
-    position: absolute;
-    top: -100%;
-    left: -100%;
-    width: 300%;
-    height: 300%;
-    background: rgba(255, 255, 255, 0.1);
-    transition: all 0.5s ease-in-out;
-    transform: rotate(45deg);
+/* Estilo para las imágenes */
+.image-link {
+    display: inline-block;
+    margin: 20px 0; /* Espaciado vertical entre imágenes y otros elementos */
 }
 
-a:hover:before {
-    top: 0;
-    left: 0;
+/* Estilo de las imágenes */
+.image-link img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para un aspecto elegante */
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
 }
 
-a:active {
-    transform: translateY(4px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+/* Línea divisoria dorada */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #d4af37; /* Línea dorada */
+    margin: 20px 0;
 }
