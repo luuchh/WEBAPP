@@ -1,0 +1,79 @@
+/* Estilo general del body */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif; /* Tipografía sans-serif */
+    background-color: #001f3f; /* Azul marino */
+    color: #f5f5f5; /* Color de texto claro */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    padding: 40px;
+    background: #003366; /* Azul marino claro */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Estilo para títulos */
+h1, h2, h3 {
+    color: #d4af37; /* Color dorado para los títulos */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center;
+}
+
+/* Estilo para párrafos */
+p {
+    color: #f5f5f5; /* Color de texto para párrafos */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+    text-align: center;
+}
+
+/* Estilo general de los enlaces */
+a {
+    text-decoration: none;
+    color: #d4af37; /* Dorado */
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border: 2px solid #d4af37; /* Bordes dorados */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover para enlaces */
+a:hover {
+    background-color: #d4af37; /* Fondo dorado */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Estilo para las imágenes */
+.image-link {
+    display: inline-block;
+    margin: 20px 0; /* Espaciado vertical entre imágenes y otros elementos */
+}
+
+/* Estilo de las imágenes */
+.image-link img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para un aspecto elegante */
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}
+
+/* Línea divisoria dorada */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #d4af37; /* Línea dorada */
+    margin: 20px 0;
+}
