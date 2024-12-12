@@ -1,6 +1,6 @@
 /* Reset básico */
 * {
-    margin: 50;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -14,7 +14,7 @@ body {
 header {
     background-color: #525355;
     color: #FCF9F3;
-    height: 100px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,17 +23,12 @@ header {
 }
 
 header .intro h1 {
-font-size: medium;
-    color:#525355;
-    text-align: center;
-
+    font-size: 4rem;
+    margin-bottom: 10px;
 }
 
 header .intro h2 {
-    font-size: medium;
-    color:#525355;
-    text-align: center;
-
+    font-size: 2rem;
 }
 
 nav ul {
@@ -57,7 +52,6 @@ nav ul li a:hover {
 
 /* Secciones comunes */
 section {
-    min-height: 100vh;
     padding: 60px 20px;
     text-align: center;
 }
@@ -76,16 +70,12 @@ section#contact {
 
 /* About Me */
 .about-box {
-    max-width: 950px;
+    max-width: 600px;
     margin: 0 auto;
-    margin-top: 250px;
-    padding: 40px;
+    padding: 20px;
     border: 2px solid #525355;
     background-color: #FCF9F3;
     color: #525355;
-
-    align-content: center;
-    
 }
 
 /* Trabajos (galería) */
@@ -102,8 +92,6 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin-top: 20px;
-    margin-right: 20px;
 }
 
 footer {
@@ -112,3 +100,11 @@ footer {
     color: #FCF9F3;
     padding: 10px;
 }
+
+div {
+    margin-top: 20px;    /* Margen en la parte superior */
+    margin-right: 15px;  /* Margen en el lado derecho */
+    margin-bottom: 25px; /* Margen en la parte inferior */
+    margin-left: 10px;   /* Margen en el lado izquierdo */
+    }
+    
