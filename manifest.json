@@ -1,0 +1,22 @@
+{
+  "name": "Portfolio de Lucía Bravo Arias",
+  "short_name": "Portfolio",
+  "description": "Portfolio personal de Lucía Bravo Arias, diseñadora gráfica.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#525355",
+  "theme_color": "#FCF9F3",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

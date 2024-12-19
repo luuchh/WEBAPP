@@ -1,0 +1,217 @@
+/* Reset básico */
+* {
+  margin: 50;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografías y colores base */
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+/* Estilo página de inicio */
+header {
+  background-color: #525355;
+  color: #fcf9f3;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header .intro h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #525355;
+  text-align: center;
+}
+
+header .intro h2 {
+  font-size: 2rem; /* Agregado el punto y coma */
+  text-align: center;
+  color: #525355;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  position: fixed;
+  bottom: 20px;
+  list-style: none;
+  right: 100px;
+  top: 50px;
+}
+
+nav ul li a {
+  color: #fcf9f3;
+  background-color: #525355;
+  text-decoration: none;
+  font-weight: normal;
+  transition: font-weight 0.3s ease;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+}
+
+/* Secciones comunes */
+section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#curriculum,
+#works {
+  background-color: #fcf9f3;
+  color: #525355;
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: normal;
+  }
+
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+
+  .flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+}
+
+#about-me {
+  background-image: url(https://ik.imagekit.io/uemcepvm5/Untitled/branding%20aural%20logo.png?updatedAt=1734619772380);
+  color: #525355;
+}
+
+#contact {
+  background-image: url(https://ik.imagekit.io/uemcepvm5/Untitled/fondo%20floral?updatedAt=1734624280767);
+  /* Sección Contacto */
+  background-color: #525355;
+  color: #fcf9f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  min-height: 100vh;
+  text-align: center; /* Centrar el texto */
+}
+
+/* Contenido Contacto */
+.contact-content {
+  display: flex;
+  flex-direction: column; /* Alinea cada ítem en una columna */
+  align-items: center; /* Centra horizontalmente */
+  gap: 20px; /* Espacio entre elementos */
+}
+
+/* Íconos y enlaces */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre ícono y texto */
+  font-size: 1.2rem;
+}
+
+/* Íconos */
+.contact-item i {
+  color: #fcf9f3;
+  font-size: 1.5rem;
+}
+
+/* Enlaces personalizados */
+.contact-item a {
+  color: #fcf9f3; /* Color del texto */
+  text-decoration: none; /* Quita el subrayado */
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #cabfa6; /* Cambia el color al pasar el ratón */
+}
+
+/* About Me */
+.about-box {
+  max-width: 950px;
+  margin: 0 auto;
+  margin-top: 250px;
+  padding: 40px;
+  border: 2px solid #525355;
+  background-color: #fcf9f3;
+  color: #525355;
+  align-content: center;
+}
+
+/* Trabajos (galería) */
+.work-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Estilos globales */
+body {
+  margin: 0;
+  font-family: "Helvetica", sans-serif;
+}
+/* Contenedor para las imágenes dentro de la galería */
+.work-gallery {
+  display: flex; /* Usamos Flexbox para alinear las imágenes */
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten a múltiples filas */
+  gap: 20px; /* Espacio entre las imágenes */
+  justify-content: center; /* Centra las imágenes en la página */
+}
+
+/* Cada contenedor de imagen */
+.container {
+  width: 100%; /* Las imágenes ocuparán el 100% del ancho de su contenedor */
+  margin: 0 auto; /* Centra las imágenes dentro de su contenedor */
+  padding: 0 10px; /* Espacio alrededor de las imágenes */
+}
+
+/* Estilo para las imágenes dentro del contenedor */
+.container img {
+  width: 100%; /* Las imágenes ocupan el 100% del ancho del contenedor */
+  height: auto; /* Mantienen su proporción original */
+  object-fit: contain; /* Se ajusta dentro del contenedor sin recortarse */
+  display: block; /* Evita el espacio debajo de la imagen */
+  margin: 0 auto; /* Centra la imagen */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  /* Para pantallas más pequeñas, las imágenes se ajustarán mejor */
+  .work-gallery {
+    flex-direction: column; /* Las imágenes estarán en una sola columna */
+    align-items: center; /* Centra las imágenes verticalmente */
+  }
+
+  .container {
+    max-width: 100%; /* En pantallas pequeñas, las imágenes ocupan todo el ancho disponible */
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Para pantallas grandes, las imágenes podrán ocupar más espacio */
+}
