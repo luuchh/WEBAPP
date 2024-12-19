@@ -31,11 +31,11 @@ header .intro h1 {
 }
 
 header .intro h2 {
-    font-size: 2rem
+    font-size: 2rem; /* Agregado el punto y coma */
     text-align: center;
-    color:#525355;
-
+    color: #525355;
 }
+
 
 nav ul {
     display: flex;
@@ -79,9 +79,52 @@ section#about-me{
 }
 
 section#contact {
+    background-image: url(https://ik.imagekit.io/uemcepvm5/Untitled/fondo%20floral?updatedAt=1734624280767);
+/* Sección Contacto */
     background-color: #525355;
     color: #FCF9F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    min-height: 100vh;
+    text-align: center; /* Centrar el texto */
 }
+
+/* Contenido Contacto */
+.contact-content {
+    display: flex;
+    flex-direction: column; /* Alinea cada ítem en una columna */
+    align-items: center; /* Centra horizontalmente */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+/* Íconos y enlaces */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre ícono y texto */
+    font-size: 1.2rem;
+}
+
+/* Íconos */
+.contact-item i {
+    color: #FCF9F3;
+    font-size: 1.5rem;
+}
+
+/* Enlaces personalizados */
+.contact-item a {
+    color: #FCF9F3; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #cabfa6; /* Cambia el color al pasar el ratón */
+}
+
 
 /* About Me */
 .about-box {
@@ -111,4 +154,3 @@ body {
     margin: 0;
     font-family: 'Helvetica', sans-serif;
 }
-
