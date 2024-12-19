@@ -14,7 +14,7 @@ body {
 header {
     background-color: #525355;
     color: #FCF9F3;
-    height: 100px;
+    height: 950px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,16 +23,17 @@ header {
 }
 
 header .intro h1 {
-font-size: medium;
+        font-size: 4rem;
+        margin-bottom: 10px;
     color:#525355;
     text-align: center;
 
 }
 
 header .intro h2 {
-    font-size: medium;
-    color:#525355;
+    font-size: 2rem
     text-align: center;
+    color:#525355;
 
 }
 
@@ -63,10 +64,13 @@ section {
 }
 
 section#curriculum,
-section#about-me,
 section#works {
     background-color: #FCF9F3;
     color: #525355;
+}
+
+section#about-me{
+    background-image: url(https://ik.imagekit.io/uemcepvm5/Untitled/branding%20aural%20logo.png?updatedAt=1734619772380);
 }
 
 section#contact {
@@ -97,18 +101,40 @@ section#contact {
     padding: 20px;
 }
 
-/* Botón fijo para navegación */
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-top: 20px;
-    margin-right: 20px;
+/* Estilos globales */
+body {
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
 }
 
-footer {
-    text-align: center;
-    background-color: #525355;
-    color: #FCF9F3;
-    padding: 10px;
+/* Contenedor de los botones */
+.nav-buttons {
+    display: flex; /* Alinea los botones horizontalmente */
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+    margin: 20px; /* Margen superior y lateral */
+}
+
+/* Botones de navegación */
+.nav-buttons .button {
+    background-color: #525355; /* Fondo de los botones */
+    color: #FCF9F3; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-family: 'Helvetica', sans-serif; /* Tipografía Helvetica */
+    font-size: 16px; /* Tamaño del texto */
+    padding: 10px 20px; /* Relleno interno */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    transition: background-color 0.3s ease; /* Efecto suave para el hover */
+}
+
+/* Efecto hover */
+.nav-buttons .button:hover {
+    background-color: #3a3b3d; /* Fondo más oscuro al pasar el ratón */
+}
+
+/* Efecto active (al hacer clic) */
+.nav-buttons .button:active {
+    background-color: #2c2d2e; /* Aún más oscuro al hacer clic */
 }
