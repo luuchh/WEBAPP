@@ -65,7 +65,81 @@ section {
   text-align: center;
 }
 
-#curriculum,
+/* Sección de Currículum */
+#curriculum {
+  background-color: #fcf9f3;
+  color: #525355;
+  padding: 50px;
+  text-align: center;
+}
+
+#curriculum h1,
+#curriculum h2,
+#curriculum h3 {
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+}
+
+#curriculum h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#curriculum h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+#curriculum h3 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* Contenedor del Currículum */
+.curriculum-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Secciones */
+.section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  color: #525355;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Listas */
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section li {
+  margin: 10px 0;
+}
+
+/* Enlaces */
+.section a {
+  color: #525355;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
 #works {
   background-color: #fcf9f3;
   color: #525355;
@@ -151,7 +225,7 @@ section {
 
 /* About Me */
 .about-box {
-  max-width: 950px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 250px;
   padding: 40px;
@@ -161,6 +235,15 @@ section {
   align-content: center;
 }
 
+.curriculum {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 2px solid #525355;
+  background-color: #fcf9f3;
+  color: #525355;
+  align-content: center;
+}
 /* Trabajos (galería) */
 .work-gallery {
   display: flex;
