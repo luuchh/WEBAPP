@@ -39,17 +39,22 @@ header .intro h2 {
 
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     position: fixed;
     bottom: 20px;
     list-style: none;
+    right: 100px;
+    top: 50px;
+    
 }
 
 nav ul li a {
     color: #FCF9F3;
+    background-color: #525355;
     text-decoration: none;
     font-weight: normal;
     transition: font-weight 0.3s ease;
+    padding: 10px;
 }
 
 nav ul li a:hover {
@@ -107,34 +112,3 @@ body {
     font-family: 'Helvetica', sans-serif;
 }
 
-/* Contenedor de los botones */
-.nav-buttons {
-    display: flex; /* Alinea los botones horizontalmente */
-    gap: 10px; /* Espacio entre los botones */
-    justify-content: flex-end; /* Alinea los botones a la derecha */
-    margin: 20px; /* Margen superior y lateral */
-}
-
-/* Botones de navegación */
-.nav-buttons .button {
-    background-color: #525355; /* Fondo de los botones */
-    color: #FCF9F3; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    font-family: 'Helvetica', sans-serif; /* Tipografía Helvetica */
-    font-size: 16px; /* Tamaño del texto */
-    padding: 10px 20px; /* Relleno interno */
-    border: none; /* Sin bordes */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar por el botón */
-    transition: background-color 0.3s ease; /* Efecto suave para el hover */
-}
-
-/* Efecto hover */
-.nav-buttons .button:hover {
-    background-color: #3a3b3d; /* Fondo más oscuro al pasar el ratón */
-}
-
-/* Efecto active (al hacer clic) */
-.nav-buttons .button:active {
-    background-color: #2c2d2e; /* Aún más oscuro al hacer clic */
-}
