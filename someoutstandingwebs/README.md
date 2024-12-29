@@ -6,11 +6,14 @@
 <br/>
 
 ## Marcación
-- 
+- no se ve el h1 ni parte de la primera web
+- Estructura no semántica con párrafos en un div de contenedor
 
 ## Contenido
--
-## Estilado
+- Excesivamente escueto pero a la vez concreto y personal
 
+## Estilado
+- le sobra height: 100vh; en el body
+- Bonito tema de fondo estrellado, oscuro y oro
 
 ### NOTAS
