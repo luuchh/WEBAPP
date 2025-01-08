@@ -20,6 +20,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+  
 }
 
 header .intro h1 {
@@ -195,20 +196,6 @@ section {
   flex-direction: column; /* Alinea cada ítem en una columna */
   align-items: center; /* Centra horizontalmente */
   gap: 20px; /* Espacio entre elementos */
-}
-
-/* Íconos y enlaces */
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Espacio entre ícono y texto */
-  font-size: 1.2rem;
-}
-
-/* Íconos */
-.contact-item i {
-  color: #fcf9f3;
-  font-size: 1.5rem;
 }
 
 /* Enlaces personalizados */
